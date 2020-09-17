@@ -5,13 +5,10 @@
     <title>Cân nặng</title>
 </head>
 <body>
-a <input id="number1"/><br>
-b <input id="number2 "/><br>
-<button onclick="getResult()">kết quả</button>
 <script>
-    function getResult() {
-        let a= + document.getElementById("number1");
-        let b= + document.getElementById("number2");
+
+        let a= + prompt('chiều cao');
+        let b= + prompt('cân nặng');
         let  bmi=b/(a*a);
 
         if (bmi < 18)
@@ -22,7 +19,7 @@ b <input id="number2 "/><br>
             document.write("Overweight");
         else
             document.write("Obese");
-    }
+
 
 </script>
 </body>
